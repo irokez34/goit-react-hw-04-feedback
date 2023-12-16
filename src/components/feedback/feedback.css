@@ -1,0 +1,14 @@
+.feedback > h2
+{
+    margin-bottom: 25px;
+}
+.btns-container
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+button
+{
+    cursor: pointer;
+}
