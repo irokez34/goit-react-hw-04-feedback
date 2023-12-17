@@ -1,15 +1,10 @@
 import './feedback.css';
-import { nanoid } from 'nanoid';
 
-const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+const FeedbackOptions = ({ options, handleClick }) => {
   const feedbackBtns = options.map(option => {
     return (
       <>
-        <button
-          className="state-btn-item"
-          key={options}
-          onClick={onLeaveFeedback}
-        >
+        <button className="state-btn-item" key={option} onClick={handleClick}>
           {option}
         </button>
       </>

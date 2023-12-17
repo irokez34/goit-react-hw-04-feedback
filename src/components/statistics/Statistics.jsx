@@ -14,8 +14,16 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
       </li>
     </ul>
   );
-return <>{statisticsList}</>
-  // return <>{total ? statisticsList : <NotificationMessage message="There is no feedback" />}</>;
+
+  return (
+    <>
+      {total ? (
+        statisticsList
+      ) : (
+        <NotificationMessage message="There is no feedback" />
+      )}
+    </>
+  );
 };
 
 export default Statistics;
