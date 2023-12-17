@@ -1,7 +1,7 @@
 import Statistics from './statistics/Statistics';
 import FeedbackOptions from './feedback/FeedbackOptions';
 import Section from './section/section';
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 
 export const App = () => {
   const [good, setGood] = useState(0);
