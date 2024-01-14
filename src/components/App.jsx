@@ -7,7 +7,7 @@ export const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
-  const options = ['good', 'neutral', 'bad'];
+
   const updateState = {
     good: setGood,
     neutral: setNeutral,
@@ -37,7 +37,7 @@ export const App = () => {
     >
       <Section title="Please leave feedback"></Section>
       <FeedbackOptions
-        options={options}
+        options={Object.keys({ good, neutral, bad })}
         handleClick={handleClick}
       ></FeedbackOptions>
       <Section title="Statistics">
